@@ -53,6 +53,7 @@ workflows:
             branches:
               only:
                 - develop
+                - /branch-.*/
       - test:
           requires:
             - hithere
