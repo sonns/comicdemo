@@ -49,6 +49,10 @@ workflows:
       - hithere:
           requires:
             - sonnguyen
+          filters:
+            branches:
+              only:
+                - develop
       - test:
           requires:
             - hithere
